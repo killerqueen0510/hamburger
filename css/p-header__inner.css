@@ -1,0 +1,15 @@
+.p-header__inner__menu {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #707070;
+  text-align: right;
+  padding: 14px 16px 0 0;
+}
+
+.p-header__inner__title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #707070;
+  text-align: center;
+}
+/*# sourceMappingURL=p-header__inner.css.map */

@@ -1,0 +1,6 @@
+.p-main__wrapper {
+    @include responsive(md) {
+        display: flex;
+      }
+
+}

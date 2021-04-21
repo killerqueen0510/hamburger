@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.p-locationmap {
+  position: relative;
+  margin-top: 50px;
+}
+
+.p-locationmap img {
+  max-width: 100%;
+  height: 691px;
+  object-fit: cover;
+}
+
+.p-locationmap__description {
+  position: absolute;
+  width: 375px;
+  height: 691px;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.6;
+}
+
+.p-locationmap__description h2 {
+  font-size: 3.0rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #FFFFFF;
+  margin: 40px 0 0 40px;
+}
+
+.p-locationmap__description p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  overflow: hidden;
+  line-height: 2.3;
+  color: #FFFFFF;
+  width: 295px;
+  height: 518px;
+  margin: 20px 40px 40px 40px;
+}
+
+.p-locationmap__description__border {
+  display: flex;
+  flex-flow: column;
+}
+
+.p-locationmap__description__border:after {
+  border-top: 2px solid;
+  content: "";
+  width: 75px;
+  /* 線の長さ */
+  color: #FFFFFF;
+}
+
+.p-locationmap__description__border:after {
+  margin-top: 20px;
+  /* 文字の左隣 */
+}
+/*# sourceMappingURL=p-locationmap.css.map */

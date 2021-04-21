@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ハンバーガーサイト課題</title>
+        <meta name="description" content="ハンバーガーサイト課題">
+        <!-- Fontawesomeの読み込み(虫眼鏡用) -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- Robotoフォント -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- M+フォント -->
+        <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+        <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <!-- CSSファイルを指定 -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header class="l-header">
+            <div class="p-header__inner">
+                <h2 class="p-header__inner__menu">Menu</h2>
+                <h1 class="p-header__inner__title">Hamburger</h1>
+            </div>
+            <form class="p-header__search" action="自分のサイトURL" method="get">
+                <input class="c-search__input" type="text" placeholder="&#xf002">
+                <button class="c-search__button" type="submit" name="name" value="値">検索</button>
+            </form>
+        </header>
+
+        <main class="l-main">
+            <article class="p-main__dummy">
+                <p><img src="scss/images/img-dummysite-01.png" alt="dummysite"></p>
+                <h2>ダミーサイト</h2>
+            </article>
+
+            <div class="p-main__wrapper">
+            <article class="p-main__branchmenu">
+                <h2 class="p-main__branchmenu__border">Take Out</h2>
+                <p><img src="scss/images/img-takeout-01.png" alt="takeout"></p>
+                <div class="p-main__branchmenu__container">
+                    <dl class="p-main__branchmenu__container__description">
+                        <dt>小見出しが入ります</dt>
+                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                    </dl>                
+                    <dl class="p-main__branchmenu__container__description">
+                        <dt>小見出しが入ります</dt>
+                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                    </dl>
+                </div>
+            </article>
+               
+            <article class="p-main__branchmenu">
+                <h2 class="p-main__branchmenu__border">Eat In</h2>
+                <p><img src="scss/images/img-eatin-01.png" alt="eatin"></p>
+                <div class="p-main__branchmenu__container">
+                    <dl class="p-main__branchmenu__container__description">
+                        <dt>小見出しが入ります</dt>
+                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                    </dl>                
+                    <dl class="p-main__branchmenu__container__description">
+                        <dt>小見出しが入ります</dt>
+                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                    </dl>
+                </div>
+            </article>
+            </div>
+        </main>
+
+        <div class="l-sidebar">
+            <aside>
+                <h2>Menu</h2>
+                <h3>バーガー</h3>
+                <ul>
+                    <li>ハンバーガー</li>
+                    <li>チーズバーガー</li>
+                    <li>テリヤキバーガー</li>
+                    <li>アボガドバーガー</li>
+                    <li>フィッシュバーガー</li>
+                    <li>ベーコンバーガー</li>
+                    <li>チキンバーガー</li>
+                </ul>
+                <h3>サイド</h3>
+                <ul>
+                    <li>ポテト</li>
+                    <li>サラダ</li>
+                    <li>ナゲット</li>
+                    <li>コーン</li>
+                </ul>
+                <h3>ドリンク</h3>
+                <ul>
+                    <li>コーラ</li>
+                    <li>ファンタ</li>
+                    <li>オレンジ</li>
+                    <li>アップル</li>
+                    <li>紅茶（Ice/Hot）</li>
+                    <li>コーヒー（Ice/Hot）</li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <section>
+            <div class="p-locationmap">
+                <p><img src="scss/images/img-map-01.png" alt="map"></p>
+                <div class="p-locationmap__description">
+                    <h2 class=p-locationmap__description__border>見出しが入ります</h2>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>    
+                </div>
+                      
+            </div>
+        </section>
+
+        <footer class="l-footer">
+            <div class="p-footer">
+                <p>ショップ情報 | ヒストリー</p>
+                <p><small>Copyright: RaiseTech</small></p>
+            </div>
+        </footer>
+
+    </body>
+
+
+
+
+</html>

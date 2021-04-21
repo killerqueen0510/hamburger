@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,AAAA,SAAS,CAAC;EACV;;;+BAG+B;CAa9B;;AAjBD,AAMI,SANK,AAMJ,MAAM,CAAC;EACJ,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,GAAG;EAAE,cAAc;EAC1B,KAAK,EAAE,OAAO;CACjB;;AAXL,AAaI,SAbK,AAaJ,MAAM,CAAC;EACJ,UAAU,EAAE,GAAG;EAAE,gBAAgB;CACpC",
+    "sources": [
+        "../scss/object/project/p-border.scss"
+    ],
+    "names": [],
+    "file": "p-border.css"
+}

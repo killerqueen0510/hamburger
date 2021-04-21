@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.p-border {
+  /*     display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.p-border:after {
+  border-top: 20px solid;
+  content: "";
+  width: 3em;
+  /* 線の長さ */
+  color: #FFFFFF;
+}
+
+.p-border:after {
+  margin-top: 1em;
+  /* 文字の左隣 */
+}
+/*# sourceMappingURL=p-border.css.map */

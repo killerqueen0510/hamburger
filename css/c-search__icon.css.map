@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,EAAE;EACR,GAAG,EAAE,CAAC;EACN,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;CAElB",
+    "sources": [
+        "../scss/object/component/c-search__icon.scss"
+    ],
+    "names": [],
+    "file": "c-search__icon.css"
+}

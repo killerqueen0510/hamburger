@@ -1,0 +1,26 @@
+.p-main__branchmenu {
+  position: relative;
+  height: auto;
+}
+
+.p-main__branchmenu img {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-main__branchmenu h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p-main__branchmenu__description {
+  position: absolute;
+  top: 297px;
+  left: 29px;
+}
+
+.p-main__branchmenu__description dd {
+  overflow-wrap: normal;
+}
+/*# sourceMappingURL=p-main__takeout.css.map */

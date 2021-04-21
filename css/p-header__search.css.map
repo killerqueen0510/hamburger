@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,MAAM;EAAE,oCAAoC;EAC7D,WAAW,EAAE,MAAM;EAAE,oCAAoC;CAE5D",
+    "sources": [
+        "../scss/object/project/p-header__search.scss"
+    ],
+    "names": [],
+    "file": "p-header__search.css"
+}

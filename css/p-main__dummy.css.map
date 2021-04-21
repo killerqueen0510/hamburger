@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,QAAQ,EAAE,QAAQ;CAiBrB;;AAlBD,AAGI,cAHU,CAGV,GAAG,CAAC;EACA,SAAS,EAAC,IAAI;EACd,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;CAEpB;;AARL,AASI,cATU,CASV,EAAE,CAAC;EACC,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,MAAM;EACjB,GAAG,EAAE,KAAK;EACV,IAAI,EAAE,IAAI;EACV,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../scss/object/project/p-main__dummy.scss"
+    ],
+    "names": [],
+    "file": "p-main__dummy.css"
+}

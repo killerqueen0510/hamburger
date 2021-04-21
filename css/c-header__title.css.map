@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,SAAS,EAAE,EAAE;EACb,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,OAAO;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "../scss/object/component/c-header__title.scss"
+    ],
+    "names": [],
+    "file": "c-header__title.css"
+}

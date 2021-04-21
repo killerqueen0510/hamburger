@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.p-main__branchmenu {
+  position: relative;
+  width: 335px;
+  height: auto;
+  margin: 20px 20px 0 20px;
+}
+
+.p-main__branchmenu img {
+  max-width: 100%;
+  height: 642px;
+}
+
+.p-main__branchmenu h2 {
+  position: absolute;
+  font-size: 4.1rem;
+  top: 11px;
+  left: 10px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.p-main__branchmenu__container {
+  position: absolute;
+  color: #3C2A10;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  line-height: 1.5;
+}
+
+.p-main__branchmenu__container__description {
+  width: 314px;
+  height: 163px;
+  border: 1px solid #707070;
+  background: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.p-main__branchmenu__container__description dt {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 20px 0 0 10px;
+}
+
+.p-main__branchmenu__container__description dd {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 20px 10px 30px 10px;
+  width: 290px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.p-main__branchmenu__border {
+  display: flex;
+  flex-flow: column;
+}
+
+.p-main__branchmenu__border:after {
+  border-top: 4px solid;
+  content: "";
+  width: 32.5px;
+  /* 線の長さ */
+  color: #FFFFFF;
+}
+
+.p-main__branchmenu__border:after {
+  margin-top: 20px;
+  /* 文字の左隣 */
+}
+/*# sourceMappingURL=p-main__branchmenu.css.map */

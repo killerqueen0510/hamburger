@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,OAAO;CAYjB;;AAdD,AAII,SAJK,CAIL,CAAC,AAAA,YAAa,CAAA,CAAC,EAAE;EACb,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;CAEpB;;AARL,AASI,SATK,CASL,CAAC,AAAA,YAAa,CAAA,CAAC,EAAE;EACb,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,IAAI;CAEnB",
+    "sources": [
+        "../scss/object/project/p-footer.scss"
+    ],
+    "names": [],
+    "file": "p-footer.css"
+}

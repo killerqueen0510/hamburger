@@ -1,0 +1,19 @@
+.p-main__dummy {
+    position: relative;
+
+    img {
+        max-width:100%;
+        height: 285px;
+        object-fit: cover;
+
+    }
+    h2 {
+        position: absolute;
+        font-size: 3.6rem;
+        top: 117px;
+        left: 25px;
+        color: #FFFFFF;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
