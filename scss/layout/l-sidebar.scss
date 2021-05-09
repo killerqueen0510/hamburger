@@ -1,3 +1,10 @@
+/* @import "../foundation/mixin";
+
 .l-sidebar {
     display: none;
-}
+
+    @include pc {
+        display: block;
+      }
+
+} */

@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  .p-main__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-main__wrapper {
+    display: flex;
+  }
+}
+/*# sourceMappingURL=p-main__wrapper.css.map */

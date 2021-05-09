@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACII,MAAM,EAAE,SAAS,EAAE,KAAK;EDF5B,AAAA,gBAAgB,CAAC;IAEb,OAAO,EAAE,IAAI;GAKhB;;;ACAC,MAAM,EAAE,SAAS,EAAE,MAAM;EDP3B,AAAA,gBAAgB,CAAC;IAKb,OAAO,EAAE,IAAI;GAEhB",
+    "sources": [
+        "../scss/object/project/p-main__wrapper.scss",
+        "../scss/foundation/_mixin.scss"
+    ],
+    "names": [],
+    "file": "p-main__wrapper.css"
+}

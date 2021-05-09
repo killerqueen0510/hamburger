@@ -1,19 +1,26 @@
 jQuery( function( $ ) {
 	$( ".is-hamburger" ).on( "click", function() {
 		$( this ).toggleClass( "is-open" );
-		$( ".p-gmenu" ).toggleClass( "is-open" );
-		$( "body" ).toggleClass( "is-open" );
 
+/* 
 		if( $( this ).hasClass('active') ){
 			$( this ).removeClass('active');
-			$( ".nav_body" ).addClass("close").removeClass( "open" );
+			$( ".p-sidebar__menu" ).addClass("close").removeClass( "open" );
 		}else {
 			$( this ).addClass( "active" );
-			$( ".nav_body" ).addClass( "open" ).removeClass( "close" ); 
+			$( ".p-sidebar__menu" ).addClass( "open" ).removeClass( "close" ); 
 		}
 
-		$( ".nav_body.open" ).slideDown(250);
-		$( ".nav_body.close" ).hide();
+		$( ".p-sidebar__menu.open" ).slideDown(250);
+		$( ".p-sidebar__menu.close" ).hide();
+ */
+		if($( ".p-sidebar__menu" ).hasClass('off')){
+			$( ".p-sidebar__menu" ).removeClass('off');
+			$(this).animate({'marginright':'400px'},300).addClass('on');
+		  }else{
+			$( ".p-sidebar__menu" ).addClass('off');
+			$(this).animate({'marginright':'0px'},0);
+		  }
 
 	} );
 } );

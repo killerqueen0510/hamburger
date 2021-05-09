@@ -1,4 +1,11 @@
+/* @import "../foundation/mixin";
+
 .l-sidebar {
-  display: none;
-}
+    display: none;
+
+    @include pc {
+        display: block;
+      }
+
+} */
 /*# sourceMappingURL=l-sidebar.css.map */

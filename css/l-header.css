@@ -1,6 +1,21 @@
+/* @import "../mixin"; */
 .l-header {
   width: auto;
   height: 217px;
   background: #F2EDE9;
+}
+
+@media (min-width: 768px) {
+  .l-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .l-header h1 {
+    padding-left: 65px;
+  }
+  .l-header h2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=l-header.css.map */

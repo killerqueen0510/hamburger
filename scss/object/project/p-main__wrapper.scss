@@ -1,6 +1,10 @@
-.p-main__wrapper {
-    @include responsive(md) {
-        display: flex;
-      }
+@import "../../foundation/mixin";
 
+.p-main__wrapper {
+  @include tablet {
+    display: flex;
+  }
+  @include pc {
+    display: flex;
+  }
 }

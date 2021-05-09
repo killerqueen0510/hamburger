@@ -473,10 +473,25 @@ template {
   display: none;
 }
 
+/* @import "../mixin"; */
 .l-header {
   width: auto;
   height: 217px;
   background: #F2EDE9;
+}
+
+@media (min-width: 768px) {
+  .l-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .l-header h1 {
+    padding-left: 65px;
+  }
+  .l-header h2 {
+    display: none;
+  }
 }
 
 .l-footer {
@@ -487,11 +502,17 @@ template {
   justify-content: center;
 }
 
-.l-sidebar {
-  display: none;
-}
+/* @import "../foundation/mixin";
 
-.c-search__input {
+.l-sidebar {
+    display: none;
+
+    @include pc {
+        display: block;
+      }
+
+} */
+.c-searchbox {
   width: 230px;
   height: 46px;
   border: 1px solid #707070;
@@ -500,7 +521,7 @@ template {
   font-family: FontAwesome;
 }
 
-.c-search__button {
+.c-button {
   width: 70px;
   height: 46px;
   border: 1px solid #707070;
@@ -630,7 +651,13 @@ template {
   /* 文字の左隣 */
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .p-main__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
   .p-main__wrapper {
     display: flex;
   }
@@ -694,19 +721,57 @@ template {
   /* 文字の左隣 */
 }
 
-.p-footer {
+.p-footer__information {
   font-weight: normal;
   color: #FFFFFF;
 }
 
-.p-footer p:nth-of-type(1) {
+.p-footer__information p:nth-of-type(1) {
   font-size: 2.0rem;
   padding-top: 40px;
 }
 
-.p-footer p:nth-of-type(2) {
+.p-footer__information p:nth-of-type(2) {
   font-size: 1.4rem;
   margin-top: 35px;
+}
+
+.p-sidebar__menu {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 328px;
+  height: auto;
+  background: #F2EDE9;
+}
+
+@media (min-width: 1280px) {
+  .p-sidebar__menu {
+    display: inline;
+    width: 328px;
+    height: auto;
+    background: #F2EDE9;
+  }
+}
+
+.p-sidebar__menu h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  color: #707070;
+}
+
+.p-sidebar__menu h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #707070;
+}
+
+.p-sidebar__menu ul {
+  font-size: 2.0rem;
+  font-weight: normal;
+  color: #707070;
 }
 
 /* @import "object/utility/display"; */

@@ -1,5 +1,25 @@
+@import "../foundation/mixin";
+
+/* @import "../mixin"; */
+
 .l-header {
     width: auto;
     height: 217px;
     background: #F2EDE9;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+
+        h1 {
+            padding-left: 65px;
+        }
+
+
+        h2 {
+            display: none;
+        }
+      }
+      
 }
