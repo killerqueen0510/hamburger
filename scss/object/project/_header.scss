@@ -1,0 +1,39 @@
+.p-header {
+
+    &__inner {
+        &__menu {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #707070;
+            text-align: right;
+            padding: 14px 16px 0 0;
+
+        }
+
+        &__title {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #707070;
+            text-align: center;
+
+            @include pc {
+                font-size: 6.4rem;
+            }
+
+        
+        }
+
+
+    }
+
+    &__search {
+        display: flex;
+        height: 134px;
+        justify-content: center; /* コンテンツを水平方向に中央揃え */
+        align-items: center; /* コンテンツを垂直方向に中央揃え */
+
+    
+    }
+
+}
+

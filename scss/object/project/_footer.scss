@@ -14,4 +14,8 @@
     
         }
     }
+
+    @include pc {
+        max-width: 1920px;
+    }
 }

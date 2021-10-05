@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* PCはWidthが1025pxより大きい */
+/* タブレットはWidthが1025pxより小さい */
+/* タブレットはWidthが600pxより大きい */
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +18,7 @@ html {
 body {
   font-family: 'Roboto' , 'M+ C Type-1 (basic latin) Regular', 'M+ Type-1 (general-j) Regular' , sans-serif;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -473,14 +477,13 @@ template {
   display: none;
 }
 
-/* @import "../mixin"; */
 .l-header {
   width: auto;
   height: 217px;
-  background: #F2EDE9;
+  background: #F5F5F5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .l-header {
     display: flex;
     align-items: center;
@@ -519,6 +522,20 @@ template {
   border-radius: 10px;
   line-height: 26px;
   font-family: FontAwesome;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+  .c-searchbox {
+    width: 396px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-searchbox {
+    width: 546px;
+  }
 }
 
 .c-button {
@@ -532,6 +549,19 @@ template {
   font-size: 16px;
   text-align: center;
   margin-left: 12px;
+}
+
+@media (min-width: 600px) {
+  .c-button {
+    width: 136px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-button {
+    width: 136px;
+    margin-right: 30px;
+  }
 }
 
 .p-header__inner__menu {
@@ -549,6 +579,12 @@ template {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .p-header__inner__title {
+    font-size: 6.4rem;
+  }
+}
+
 .p-header__search {
   display: flex;
   height: 134px;
@@ -563,41 +599,112 @@ template {
 }
 
 .p-main__dummy img {
-  max-width: 100%;
+  width: 100%;
   height: 285px;
   object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .p-main__dummy img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-main__dummy img {
+    width: 100%;
+    height: 530px;
+  }
 }
 
 .p-main__dummy h2 {
   position: absolute;
   font-size: 3.6rem;
-  top: 117px;
-  left: 25px;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
   color: #FFFFFF;
   font-weight: bold;
   line-height: 1.5;
 }
 
+@media (min-width: 1200px) {
+  .p-main__dummy h2 {
+    font-size: 4.0rem;
+  }
+}
+
+.p-main__wrapper {
+  margin: 0 20px;
+}
+
+@media (min-width: 600px) {
+  .p-main__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-main__wrapper {
+    display: flex;
+    margin: 120px 110px 120px 110px;
+  }
+}
+
 .p-main__branchmenu {
   position: relative;
-  width: 335px;
+  max-width: 100vw;
   height: auto;
-  margin: 20px 20px 0 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .p-main__branchmenu.offset {
+    margin-left: 80px;
+  }
 }
 
 .p-main__branchmenu img {
-  max-width: 100%;
+  width: 335px;
   height: 642px;
+}
+
+@media (min-width: 600px) {
+  .p-main__branchmenu img {
+    width: 357px;
+    height: 681px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-main__branchmenu img {
+    width: 625px;
+    height: 1193px;
+  }
 }
 
 .p-main__branchmenu h2 {
   position: absolute;
   font-size: 4.1rem;
-  top: 11px;
+  top: 10px;
   left: 10px;
   color: #FFFFFF;
   font-weight: bold;
   line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+  .p-main__branchmenu h2 {
+    font-size: 4.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-main__branchmenu h2 {
+    font-size: 8.0rem;
+    top: 20px;
+    left: 20px;
+  }
 }
 
 .p-main__branchmenu__container {
@@ -618,6 +725,13 @@ template {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1200px) {
+  .p-main__branchmenu__container__description {
+    width: 585px;
+    height: 174px;
+  }
+}
+
 .p-main__branchmenu__container__description dt {
   font-size: 2.2rem;
   font-weight: bold;
@@ -633,6 +747,13 @@ template {
   overflow: hidden;
 }
 
+@media (min-width: 1200px) {
+  .p-main__branchmenu__container__description dd {
+    width: 541px;
+    height: 97px;
+  }
+}
+
 .p-main__branchmenu__border {
   display: flex;
   flex-flow: column;
@@ -646,21 +767,23 @@ template {
   color: #FFFFFF;
 }
 
+@media (min-width: 600px) {
+  .p-main__branchmenu__border:after {
+    width: 35px;
+    /* 線の長さ */
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-main__branchmenu__border:after {
+    width: 63px;
+    /* 線の長さ */
+  }
+}
+
 .p-main__branchmenu__border:after {
   margin-top: 20px;
   /* 文字の左隣 */
-}
-
-@media (min-width: 768px) {
-  .p-main__wrapper {
-    display: flex;
-  }
-}
-
-@media (min-width: 1280px) {
-  .p-main__wrapper {
-    display: flex;
-  }
 }
 
 .p-locationmap {
@@ -736,42 +859,77 @@ template {
   margin-top: 35px;
 }
 
-.p-sidebar__menu {
-  display: none;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 328px;
-  height: auto;
+@media (min-width: 1200px) {
+  .p-footer {
+    max-width: 1920px;
+  }
+}
+
+.p-sidebar {
+  color: #707070;
   background: #F2EDE9;
 }
 
-@media (min-width: 1280px) {
+.p-sidebar__menu {
+  display: none;
+  /*         z-index:100;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 328px;
+        height: auto; */
+  background: #F2EDE9;
+}
+
+@media (min-width: 1200px) {
   .p-sidebar__menu {
-    display: inline;
-    width: 328px;
-    height: auto;
-    background: #F2EDE9;
+    display: block;
+    width: 367px;
+    height: 100vh;
   }
 }
 
 .p-sidebar__menu h2 {
   font-size: 3.4rem;
   font-weight: bold;
-  color: #707070;
+  line-height: 1.8;
+  padding: 80px 0px 0px 45px;
+}
+
+.p-sidebar__menu h3:first-of-type {
+  padding: 80px 0px 0px 45px;
 }
 
 .p-sidebar__menu h3 {
   font-size: 2.4rem;
   font-weight: bold;
-  color: #707070;
+  line-height: 1.8;
+  padding: 45px 0px 0px 45px;
 }
 
 .p-sidebar__menu ul {
   font-size: 2.0rem;
   font-weight: normal;
-  color: #707070;
+  line-height: 1.5;
+  padding: 15px 0px 0px 65px;
+}
+
+.p-sidebar__menu ul li:first-of-type {
+  margin-top: 0px;
+}
+
+.p-sidebar__menu ul li {
+  margin-top: 20px;
+}
+
+.p-container {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .p-container {
+    max-width: 1920px;
+  }
 }
 
 /* @import "object/utility/display"; */

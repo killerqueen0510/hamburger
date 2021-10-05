@@ -21,100 +21,103 @@
     </head>
 
     <body>
-        <header class="l-header p-header">
-            <div class="p-header__inner">
-                <h2 class="p-header__inner__menu is-hamburger">Menu</h2>
-                <h1 class="p-header__inner__title">Hamburger</h1>
+        <div class="p-container">
+            <div class="p-container_main">
+                <header class="l-header p-header">
+                    <div class="p-header__inner">
+                        <h2 class="p-header__inner__menu is-hamburger">Menu</h2>
+                        <h1 class="p-header__inner__title">Hamburger</h1>
+                    </div>
+                    <form class="p-header__search" action="自分のサイトURL" method="get">
+                        <input class="c-searchbox" type="text" placeholder="&#xf002">
+                        <button class="c-button" type="submit" name="name" value="値">検索</button>
+                    </form>
+                </header>
+
+                <main class="l-main p-main">
+                    <article class="p-main__dummy">
+                        <p><img src="images/img-dummysite-01.png" alt="dummysite"></p>
+                        <h2>ダミーサイト</h2>
+                    </article>
+
+                    <div class="p-main__wrapper">
+                    <article class="p-main__branchmenu">
+                        <h2 class="p-main__branchmenu__border">Take Out</h2>
+                        <p><img src="images/img-takeout-01.png" alt="takeout"></p>
+                        <div class="p-main__branchmenu__container">
+                            <dl class="p-main__branchmenu__container__description">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                            </dl>                
+                            <dl class="p-main__branchmenu__container__description">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    
+                    <article class="p-main__branchmenu offset">
+                        <h2 class="p-main__branchmenu__border">Eat In</h2>
+                        <p><img src="images/img-eatin-01.png" alt="eatin"></p>
+                        <div class="p-main__branchmenu__container">
+                            <dl class="p-main__branchmenu__container__description">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                            </dl>                
+                            <dl class="p-main__branchmenu__container__description">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    </div>
+                </main>
+
+                <section>
+                    <div class="p-locationmap">
+                        <p><img src="images/img-map-01.png" alt="map"></p>
+                        <div class="p-locationmap__description">
+                            <h2 class=p-locationmap__description__border>見出しが入ります</h2>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>    
+                        </div>
+                            
+                    </div>
+                </section>
             </div>
-            <form class="p-header__search" action="自分のサイトURL" method="get">
-                <input class="c-searchbox" type="text" placeholder="&#xf002">
-                <button class="c-button" type="submit" name="name" value="値">検索</button>
-            </form>
-        </header>
 
-        <main class="l-main p-main">
-            <article class="p-main__dummy">
-                <p><img src="images/img-dummysite-01.png" alt="dummysite"></p>
-                <h2>ダミーサイト</h2>
-            </article>
+            <div class="l-sidebar p-sidebar">
+                <aside class="p-sidebar__menu off">
+                    <h2 div class="is-hamburger">Menu</h2>
+                    <h3>バーガー</h3>
+                    <ul>
+                        <li>ハンバーガー</li>
+                        <li>チーズバーガー</li>
+                        <li>テリヤキバーガー</li>
+                        <li>アボガドバーガー</li>
+                        <li>フィッシュバーガー</li>
+                        <li>ベーコンバーガー</li>
+                        <li>チキンバーガー</li>
+                    </ul>
+                    <h3>サイド</h3>
+                    <ul>
+                        <li>ポテト</li>
+                        <li>サラダ</li>
+                        <li>ナゲット</li>
+                        <li>コーン</li>
+                    </ul>
+                    <h3>ドリンク</h3>
+                    <ul>
+                        <li>コーラ</li>
+                        <li>ファンタ</li>
+                        <li>オレンジ</li>
+                        <li>アップル</li>
+                        <li>紅茶（Ice/Hot）</li>
+                        <li>コーヒー（Ice/Hot）</li>
+                    </ul>
+                </aside>
 
-            <div class="p-main__wrapper">
-            <article class="p-main__branchmenu">
-                <h2 class="p-main__branchmenu__border">Take Out</h2>
-                <p><img src="images/img-takeout-01.png" alt="takeout"></p>
-                <div class="p-main__branchmenu__container">
-                    <dl class="p-main__branchmenu__container__description">
-                        <dt>小見出しが入ります</dt>
-                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                    </dl>                
-                    <dl class="p-main__branchmenu__container__description">
-                        <dt>小見出しが入ります</dt>
-                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                </div>
-            </article>
-               
-            <article class="p-main__branchmenu">
-                <h2 class="p-main__branchmenu__border">Eat In</h2>
-                <p><img src="images/img-eatin-01.png" alt="eatin"></p>
-                <div class="p-main__branchmenu__container">
-                    <dl class="p-main__branchmenu__container__description">
-                        <dt>小見出しが入ります</dt>
-                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                    </dl>                
-                    <dl class="p-main__branchmenu__container__description">
-                        <dt>小見出しが入ります</dt>
-                        <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                </div>
-            </article>
             </div>
-        </main>
-
-        <div class="l-sidebar p-sidebar">
-            <aside class="p-sidebar__menu off">
-                <h2 div class="is-hamburger">Menu</h2>
-                <h3>バーガー</h3>
-                <ul>
-                    <li>ハンバーガー</li>
-                    <li>チーズバーガー</li>
-                    <li>テリヤキバーガー</li>
-                    <li>アボガドバーガー</li>
-                    <li>フィッシュバーガー</li>
-                    <li>ベーコンバーガー</li>
-                    <li>チキンバーガー</li>
-                </ul>
-                <h3>サイド</h3>
-                <ul>
-                    <li>ポテト</li>
-                    <li>サラダ</li>
-                    <li>ナゲット</li>
-                    <li>コーン</li>
-                </ul>
-                <h3>ドリンク</h3>
-                <ul>
-                    <li>コーラ</li>
-                    <li>ファンタ</li>
-                    <li>オレンジ</li>
-                    <li>アップル</li>
-                    <li>紅茶（Ice/Hot）</li>
-                    <li>コーヒー（Ice/Hot）</li>
-                </ul>
-            </aside>
-
         </div>
-
-        <section>
-            <div class="p-locationmap">
-                <p><img src="images/img-map-01.png" alt="map"></p>
-                <div class="p-locationmap__description">
-                    <h2 class=p-locationmap__description__border>見出しが入ります</h2>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>    
-                </div>
-                      
-            </div>
-        </section>
-
         <footer class="l-footer p-footer">
             <div class="p-footer__information">
                 <p>ショップ情報 | ヒストリー</p>

@@ -1,0 +1,180 @@
+.p-main {
+
+    //ダミーサイトの記述
+    &__dummy {
+        position: relative;
+    
+        img {
+            width: 100%;
+            height: 285px;
+            object-fit: cover;
+
+            @include tablet {
+                width: 100%;
+    
+            }
+    
+            @include pc {
+                width: 100%;
+                height: 530px;
+            }
+    
+        }
+        h2 {
+            position: absolute;
+            font-size: 3.6rem;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%,-50%);
+            color: #FFFFFF;
+            font-weight: bold;
+            line-height: 1.5;
+
+            @include pc {
+                font-size: 4.0rem;
+            }
+        }
+    }
+
+    &__wrapper {
+        //margin: 0 auto;
+        margin: 0 20px;
+        
+          @include tablet {
+            display: flex;
+          }
+          @include pc {
+            display: flex;
+            margin: 120px 110px 120px 110px;
+          }
+      }
+      
+
+    //Take OUtとEAT INの記述
+    &__branchmenu {
+        position: relative;
+        max-width:100vw;
+        height: auto;
+        margin-top: 20px;
+
+        @include tablet {
+            //margin: 40px auto;
+        };
+
+        &.offset {
+            @include pc {
+                margin-left: 80px
+            };
+        }
+    
+        img {
+            width: 335px;
+            height: 642px;
+
+            @include tablet {
+                width: 357px;
+                height: 681px;
+            }
+    
+            @include pc {
+                width: 625px;
+                height: 1193px;
+            }
+        }
+        h2 {
+            position: absolute;
+            font-size: 4.1rem;
+            top: 10px;
+            left: 10px;
+            color: #FFFFFF;
+            font-weight: bold;
+            line-height: 1.5;
+
+            @include tablet {
+                font-size: 4.4rem;
+            }
+
+            @include pc {
+                font-size: 8.0rem;
+                top: 20px;
+                left: 20px;
+            }
+
+    
+        }
+
+        //Take OUtとEAT INの小見出しの記述
+        &__container {
+            position: absolute;
+            color: #3C2A10;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            line-height: 1.5; //「行送り」で設定した数値（px） ÷ 「フォントサイズ」で設定した数値（px）
+            &__description {
+                width: 314px;
+                height: 163px;
+                border: 1px solid #707070;
+                background: #FFFFFF;
+                opacity: 0.8;
+                margin-bottom: 10px;
+                
+                @include pc {
+                    width: 585px;
+                    height: 174px;
+
+                }
+
+
+                dt {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    margin: 20px 0 0 10px;
+                }
+                dd {
+                    font-size: 1.6rem;
+                    font-weight: normal;
+                    margin: 20px 10px 30px 10px;
+                    width: 290px;
+                    height: 70px;
+                    overflow: hidden;
+
+                    @include pc {
+                        width: 541px;
+                        height: 97px;
+    
+                    }
+
+                }
+            }
+        }
+
+        &__border {
+            display: flex;
+            flex-flow: column;
+        
+            &:after {
+                border-top: 4px solid;
+                content: "";
+                width: 32.5px; /* 線の長さ */
+                color: #FFFFFF;
+
+                @include tablet {
+                    width: 35px; /* 線の長さ */
+                }
+
+                @include pc {
+                    width: 63px; /* 線の長さ */
+                }
+
+            }
+              
+            &:after {
+                margin-top: 20px; /* 文字の左隣 */
+            }
+    
+        }
+    }
+
+}
+

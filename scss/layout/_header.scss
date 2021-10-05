@@ -1,11 +1,7 @@
-@import "../foundation/mixin";
-
-/* @import "../mixin"; */
-
 .l-header {
     width: auto;
     height: 217px;
-    background: #F2EDE9;
+    background: #F5F5F5;
 
     @include tablet {
         display: flex;

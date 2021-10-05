@@ -10,4 +10,14 @@
     text-align: center;
     margin-left: 12px;
 
+    @include tablet {
+        width: 136px;
+    }
+
+    @include pc {
+        width: 136px;
+        margin-right: 30px;
+    }
+
+
 }
