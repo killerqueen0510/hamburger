@@ -1,5 +1,7 @@
 .p-container {
     display: flex;
+    margin: 0 auto;
+    height: 100%;
 
     @include pc {
 

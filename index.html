@@ -21,6 +21,10 @@
     </head>
 
     <body>
+        <!-- menu押下時の半透明部 -->
+        <div class="p-sidebar__background">
+            <div class="p-sidebar__background__color is-open"></div>
+        </div>
         <div class="p-container">
             <div class="p-container_main">
                 <header class="l-header p-header">
@@ -76,6 +80,7 @@
                 <section>
                     <div class="p-locationmap">
                         <p><img src="images/img-map-01.png" alt="map"></p>
+                        <div class="p-locationmap__emphasis"></div>
                         <div class="p-locationmap__description">
                             <h2 class=p-locationmap__description__border>見出しが入ります</h2>
                             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>    
@@ -86,8 +91,8 @@
             </div>
 
             <div class="l-sidebar p-sidebar">
-                <aside class="p-sidebar__menu off">
-                    <h2 div class="is-hamburger">Menu</h2>
+                <aside class="p-sidebar__menu">
+                    <h2>Menu</h2>
                     <h3>バーガー</h3>
                     <ul>
                         <li>ハンバーガー</li>
@@ -115,7 +120,6 @@
                         <li>コーヒー（Ice/Hot）</li>
                     </ul>
                 </aside>
-
             </div>
         </div>
         <footer class="l-footer p-footer">

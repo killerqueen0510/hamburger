@@ -1,9 +1,9 @@
 .l-header {
     width: auto;
     height: 217px;
-    background: #F5F5F5;
+    background: #FFF7EF;
 
-    @include tablet {
+    @include pc {
         display: flex;
         align-items: center;
         justify-content:space-between;
@@ -17,5 +17,6 @@
             display: none;
         }
       }
+
       
 }

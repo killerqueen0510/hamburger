@@ -1,13 +1,12 @@
 $pc: 1200px; /* PCはWidthが1025pxより大きい */
 $tablet_max: 1199px; /* タブレットはWidthが1025pxより小さい */
-$tablet_min: 600px; /* タブレットはWidthが600pxより大きい */
+$tablet_min: 768px; /* タブレットはWidthが600pxより大きい */
 
-//タブレット600px 1025
 
-//(min-width: 600px) and (max-width: 1199px)
 
 @mixin tablet {
-    @media (min-width: ($tablet_min)) {
+    //@media (min-width: ($tablet_min)) {
+    @media (min-width: ($tablet_min)) and (max-width: ($tablet_max)) {
       @content;
     }
 }
@@ -16,6 +15,8 @@ $tablet_min: 600px; /* タブレットはWidthが600pxより大きい */
     @content;
   }
 }
+
+
 
 
 

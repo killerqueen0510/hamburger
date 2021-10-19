@@ -1,10 +1,12 @@
-/* @import "../foundation/mixin";
-
+//サイドバー検討。後で修正すること。
 .l-sidebar {
-    display: none;
 
-    @include pc {
-        display: block;
-      }
+    @include tablet {
+        position: absolute;
+        width: 40%;
+        top: 0;
+        right: 0;
+        z-index: 400;
+    }
 
-} */
+}

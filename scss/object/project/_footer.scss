@@ -1,4 +1,5 @@
 .p-footer {
+    margin: 0 auto;
     &__information {
         font-weight: normal;
         color: #FFFFFF;
@@ -17,5 +18,6 @@
 
     @include pc {
         max-width: 1920px;
+        //margin: 0 auto;
     }
 }
