@@ -22,6 +22,10 @@ body {
   height: 100%;
 }
 
+body.is-open {
+  position: fixed;
+}
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -506,14 +510,14 @@ template {
   justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .l-sidebar {
-    position: absolute;
-    width: 40%;
-    top: 0;
-    right: 0;
-    z-index: 400;
-  }
+.l-sidebar {
+  /*     @include tablet {
+        position: absolute;
+        width: 40%;
+        top: 0;
+        right: 0;
+        z-index: 400;
+    } */
 }
 
 .c-searchbox {
@@ -571,6 +575,7 @@ template {
   color: #707070;
   text-align: right;
   padding: 14px 16px 0 0;
+  cursor: pointer;
 }
 
 .p-header__inner__title {
@@ -884,27 +889,25 @@ template {
   overflow: hidden;
   line-height: 2.3;
   color: #FFFFFF;
-  width: 100%;
-  height: 691px;
+  width: 80%;
+  height: 100%;
   margin: 20px 0 0 40px;
-  padding-right: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .p-locationmap__description p {
-    width: 100%;
+    width: 90%;
     height: 60%;
-    padding-right: 60px;
-    padding-bottom: 10px;
+    margin: 20px 30px 0 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .p-locationmap__description p {
+    width: 70%;
     height: 60%;
     font-size: 1.6rem;
-    margin: 50px 0 0 120px;
-    padding-right: 300px;
+    margin: 50px 120px 0 120px;
   }
 }
 
@@ -962,15 +965,68 @@ template {
   background: #F2EDE9;
 }
 
+.p-sidebar.is-open {
+  position: fixed;
+  display: block;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  right: -90%;
+  z-index: 400;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all .5s;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .p-sidebar.is-open {
+    width: 40%;
+    right: -40%;
+    transform: translateX(-100%);
+    /* right-40%から-100%移動した位置 */
+  }
+}
+
+.p-sidebar.is-close {
+  position: fixed;
+  display: block;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  right: -90%;
+  z-index: 400;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+  transform: translateX(0);
+  transition: all .5s;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .p-sidebar.is-close {
+    width: 40%;
+    right: -40%;
+    transform: translateX(0);
+    /* right-40%から-100%移動した位置 */
+  }
+}
+
 .p-sidebar__menu {
   display: none;
 }
 
+.p-sidebar__menu.is-open {
+  display: block;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
-  .p-sidebar__menu {
+  .p-sidebar__menu.is-open {
     display: block;
-    height: 100%;
   }
+}
+
+.p-sidebar__menu.is-close {
+  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -986,10 +1042,35 @@ template {
   font-weight: bold;
   line-height: 1.8;
   padding: 80px 0px 0px 45px;
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .p-sidebar__menu h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-sidebar__menu h2 {
+    display: block;
+  }
 }
 
 .p-sidebar__menu h3:first-of-type {
-  padding: 80px 0px 0px 45px;
+  padding: 212px 0px 0px 45px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .p-sidebar__menu h3:first-of-type {
+    padding: 212px 0px 0px 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-sidebar__menu h3:first-of-type {
+    padding: 80px 0px 0px 45px;
+  }
 }
 
 .p-sidebar__menu h3 {
@@ -1014,9 +1095,53 @@ template {
   margin-top: 20px;
 }
 
+.p-sidebar__menu__button {
+  display: none;
+}
+
+.p-sidebar__menu__button span {
+  display: none;
+}
+
+.p-sidebar__menu__button.is-open {
+  display: block;
+}
+
+.p-sidebar__menu__button.is-open::before, .p-sidebar__menu__button.is-open::after {
+  content: "";
+  width: 50px;
+  height: 6px;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  display: block;
+}
+
+.p-sidebar__menu__button.is-open::before {
+  transform: rotate(-45deg);
+  background-color: #707070;
+}
+
+.p-sidebar__menu__button.is-open::after {
+  transform: rotate(-135deg);
+  background-color: #707070;
+}
+
+.p-sidebar__background__color.is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: gray;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
-  .p-sidebar__background__color {
+  .p-sidebar__background__color.is-open {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 300;

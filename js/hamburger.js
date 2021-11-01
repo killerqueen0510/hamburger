@@ -1,39 +1,28 @@
 jQuery( function( $ ) {
 	$( ".is-hamburger" ).on( "click", function() {
 		$( this ).toggleClass( "is-open" );
-
-/* 
-		if( $( this ).hasClass('active') ){
-			$( this ).removeClass('active');
-			$( ".p-sidebar__menu" ).addClass("close").removeClass( "open" );
-		}else {
-			$( this ).addClass( "active" );
-			$( ".p-sidebar__menu" ).addClass( "open" ).removeClass( "close" ); 
-		}
-
-		$( ".p-sidebar__menu.open" ).slideDown(250);
-		$( ".p-sidebar__menu.close" ).hide();
- */
-		if($( ".p-sidebar__menu" ).hasClass('off')){
-			$( ".p-sidebar__menu" ).removeClass('off');
-			$(this).animate({'marginright':'400px'},300).addClass('on');
-		  }else{
-			$( ".p-sidebar__menu" ).addClass('off');
-			$(this).animate({'marginright':'0px'},0);
-		  }
+		$( ".p-sidebar__background__color" ).toggleClass( "is-open" );
+		$( ".p-sidebar" ).toggleClass( "is-open" ).removeClass( "is-close" );
+		$( ".p-sidebar__menu" ).toggleClass( "is-open" ).removeClass( "is-close" );;
+		$( ".p-sidebar__menu__button" ).toggleClass( "is-open" );
+		$( "body" ).toggleClass( "is-open" );
 
 	} );
-} );
 
-//ハンバーガーメニューのマウスカーソルを判断
-$(function() {
-	$( ".menu__children" ).mouseover(function() {
-		$( this ).addClass("open").removeClass( "close" );
-		})
-	$( ".menu__children" ).mouseout(function() {
-		$( this ).addClass("close").removeClass("open");
-		})
-	});
+	//×押下時に閉じる処理。falseを付与することで、is-openを取り除く
+	$( ".close" ).on( "click", function() {
+		$( this ).toggleClass( "is-open", false );
+		$( ".p-sidebar__background__color" ).toggleClass( "is-open", false );
+		$( ".p-sidebar" ).toggleClass( "is-open", false ).addClass( "is-close" );
+		$( ".p-sidebar__menu" ).toggleClass( "is-open", false ).addClass( "is-close" );
+		$( ".p-sidebar__menu__button" ).toggleClass( "is-open", false );
+		$( "body" ).toggleClass( "is-open", false );
+
+/* 		$( ".p-sidebar__menu.close" ).hide(); */
+		
+	} );
+
+} );
 
 //1200px以上の場合、リセットする
 //リサイズを行っている間常に実行されないようにリサイズが終わった場合のみに処理が行われるようにする
@@ -44,22 +33,12 @@ $(window).resize(function() {
 			clearTimeout($resizeTimer);
 		}
 		$resizeTimer = setTimeout(function() {
-			$( ".p-hamburger" ).removeClass( "is-open" );
-			$( ".p-hamburger" ).removeClass( "active" );
-			$( ".p-gmenu" ).removeClass( "is-open" );
+			$( ".p-sidebar__background__color" ).removeClass( "is-open" );
+			$( ".p-sidebar" ).removeClass( "is-open is-close" );
+			$( ".p-sidebar__menu" ).removeClass( "is-open is-close" );
+			$( ".p-sidebar__menu__button" ).removeClass( "is-open" );
 			$( "body" ).removeClass( "is-open" );
-			$( ".nav_body" ).removeClass( "open" ); 
-			$( ".nav_body" ).removeClass( "close" ); 
 			
 		}, 100);
 	}
-});
-
-//ホバーの設定
-$(function(){
-    $( ".menu__accordion li" ).hover(function(){
-        $( "ul:not(:animated)" , this).slideDown(250);
-    }, function(){
-        $( "ul.sub__menu" ,this).hide();
-    });
 });
