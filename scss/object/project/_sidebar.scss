@@ -3,6 +3,11 @@
     color: #707070;
     background: #F2EDE9;
 
+    @include pc {
+        width: 20vw;
+    };
+
+
     &.is-open {
         position: fixed;
         display: block;
@@ -63,7 +68,7 @@
 
         @include pc {
             display: block;
-            width: 367px;
+            //width: 367px;
             height: 100%;
 
         }

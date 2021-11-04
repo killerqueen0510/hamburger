@@ -1,13 +1,21 @@
 .p-container {
     display: flex;
     margin: 0 auto;
-    height: 100%;
 
     @include pc {
 
         max-width: 1920px;
-        //margin: 0 auto;
+        width: 100vw;
 
     }
+
+    &__main {
+
+        @include pc {
+            width: 80vw;
+        }
+    }
+
+
 
 }
