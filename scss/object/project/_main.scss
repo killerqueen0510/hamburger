@@ -115,18 +115,14 @@
             bottom: 0;
             transform: translateX(-50%);
             line-height: 1.5; //「行送り」で設定した数値（px） ÷ 「フォントサイズ」で設定した数値（px）
+
             &__description {               
-                height: 163px;
+                //height: 163px;
                 border: 1px solid #707070;
                 background: #FFFFFF;
                 opacity: 0.8;
                 margin-bottom: 10px;
                 
-                @include pc {
-                    //width: 585px;
-                    height: 174px;
-
-                }
 
 
                 dt {
@@ -137,16 +133,10 @@
                 dd {
                     font-size: 1.6rem;
                     font-weight: normal;
-                    margin: 20px 10px 30px 10px;
-                    //width: 290px;
-                    height: 70px;
+                    margin: 20px 10px 10px 10px;
+                    width: 93%;
                     overflow: hidden;
 
-                    @include pc {
-                        width: 541px;
-                        height: 97px;
-    
-                    }
 
                 }
             }

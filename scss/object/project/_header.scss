@@ -28,8 +28,12 @@
     &__search {
         display: flex;
         height: 134px;
-        justify-content: center; /* コンテンツを水平方向に中央揃え */
-        align-items: center; /* コンテンツを垂直方向に中央揃え */
+        justify-content: center;
+        align-items: center;
+
+        @include pc {
+            justify-content: flex-end;
+        }
 
     
     }

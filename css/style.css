@@ -18,8 +18,6 @@ html {
 body {
   font-family: 'Roboto' , 'M+ C Type-1 (basic latin) Regular', 'M+ Type-1 (general-j) Regular' , sans-serif;
   font-size: 1.6rem;
-  width: 100%;
-  height: 100%;
 }
 
 body.is-open {
@@ -520,7 +518,6 @@ template {
 }
 
 .c-searchbox {
-  width: 230px;
   height: 46px;
   border: 1px solid #707070;
   border-radius: 10px;
@@ -538,7 +535,7 @@ template {
 
 @media (min-width: 1200px) {
   .c-searchbox {
-    width: 546px;
+    width: 396px;
   }
 }
 
@@ -594,9 +591,13 @@ template {
   display: flex;
   height: 134px;
   justify-content: center;
-  /* コンテンツを水平方向に中央揃え */
   align-items: center;
-  /* コンテンツを垂直方向に中央揃え */
+}
+
+@media (min-width: 1200px) {
+  .p-header__search {
+    justify-content: flex-end;
+  }
 }
 
 .p-main__dummy {
@@ -729,17 +730,10 @@ template {
 }
 
 .p-main__branchmenu__container__description {
-  height: 163px;
   border: 1px solid #707070;
   background: #FFFFFF;
   opacity: 0.8;
   margin-bottom: 10px;
-}
-
-@media (min-width: 1200px) {
-  .p-main__branchmenu__container__description {
-    height: 174px;
-  }
 }
 
 .p-main__branchmenu__container__description dt {
@@ -751,16 +745,9 @@ template {
 .p-main__branchmenu__container__description dd {
   font-size: 1.6rem;
   font-weight: normal;
-  margin: 20px 10px 30px 10px;
-  height: 70px;
+  margin: 20px 10px 10px 10px;
+  width: 93%;
   overflow: hidden;
-}
-
-@media (min-width: 1200px) {
-  .p-main__branchmenu__container__description dd {
-    width: 541px;
-    height: 97px;
-  }
 }
 
 .p-main__branchmenu__border {
@@ -876,7 +863,6 @@ template {
   line-height: 2.3;
   color: #FFFFFF;
   width: 80%;
-  height: 100%;
   margin: 20px 0 0 40px;
 }
 
@@ -891,7 +877,7 @@ template {
 @media (min-width: 1200px) {
   .p-locationmap__description p {
     width: 70%;
-    height: 60%;
+    height: 40%;
     font-size: 1.6rem;
     margin: 50px 120px 0 120px;
   }
@@ -1149,7 +1135,6 @@ template {
 @media (min-width: 1200px) {
   .p-container {
     max-width: 1920px;
-    width: 100vw;
   }
 }
 
